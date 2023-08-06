@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ direction.title }}</title>
+</head>
+<body>
+  <h1>{{ direction.type }}</h1>
+  <p>{{ direction.is_logic }}</p>
+  <h4>{{ direction.number_of_question }}</h4>
+  <h4>{{ direction.time }}</h4>
+  <h4>{{ direction.score }}</h4><br>
+    <a href="{% url 'update-direction' direction.id %}">Changed</a>
+    <a href="{% url 'delete-direction' direction.id %}">Delete</a>
+
+</body>
+</html>
